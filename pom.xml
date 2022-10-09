@@ -40,6 +40,12 @@
             <scope>compile</scope>
         </dependency>
 
+        <!--    spring提供的Redis客户端    -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!--
             lang包主要是一些可以高度重用的Util类；
             lang.enum已不建议使用，替代它的是紧随其后的lang.enums包;
@@ -97,6 +103,19 @@
             <artifactId>aliyun-java-sdk-core</artifactId>
             <version>4.6.0</version>
         </dependency>
+
+        <!-- 在Java中操作Redis,Redis的Java客户端 -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>4.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
 
     </dependencies>
 
