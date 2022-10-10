@@ -17,7 +17,6 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
         (classes = {ReggieApplication.class})
