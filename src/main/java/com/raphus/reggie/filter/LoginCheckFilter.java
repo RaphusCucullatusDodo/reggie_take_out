@@ -52,6 +52,7 @@ public class LoginCheckFilter implements Filter{
         }
 
         log.info("当前线程为:{}",Thread.currentThread().getName());
+        //todo 当前拦截规则只要user登入则可直接访问后台管理页面不合理(应隔离user与employee账户权限)
         //4-1、判断登录状态，如果已登录，则直接放行(check=false,则判断是否登入)
         if(request.getSession().getAttribute("employee") != null){
             log.info("用户已登录，用户id为：{}",request.getSession().getAttribute("employee"));

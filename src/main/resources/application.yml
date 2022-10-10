@@ -10,12 +10,12 @@ spring:
       username: root
       password: "088.5741"
   redis:
-#    host: localhost
-#    port: 6379
-    #虚拟机redis 模拟远程连接Redis
-    host: 192.168.2.6
+    host: localhost
     port: 6379
-    password: 123456
+    #虚拟机redis 模拟远程连接Redis
+#    host: 192.168.2.6
+#    port: 6379
+#    password: 123456
     # 默认0号数据库
     database: 0
     jedis:
