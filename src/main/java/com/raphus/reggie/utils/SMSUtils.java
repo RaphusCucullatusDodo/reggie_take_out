@@ -29,12 +29,13 @@ public class SMSUtils {
 		request.setSignName(signName);
 		request.setTemplateCode(templateCode);
 		request.setTemplateParam("{\"code\":\""+param+"\"}");
-		try {
-			SendSmsResponse response = client.getAcsResponse(request);
-			System.out.println("短信发送成功");
-		}catch (ClientException e) {
-			e.printStackTrace();
-		}
+		// 注释防止发送短信被扣费
+//		try {
+//			SendSmsResponse response = client.getAcsResponse(request);
+//			System.out.println("短信发送成功");
+//		}catch (ClientException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 //	//官方案例
