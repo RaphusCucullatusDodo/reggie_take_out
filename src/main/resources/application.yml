@@ -48,4 +48,4 @@ reggie:
   #上传图片保存路径
 #  imagePath: D:\\image\
   # 线上
-  imagePath: \usr\local\image\
+  imagePath: /usr/local/image/
