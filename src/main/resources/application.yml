@@ -7,15 +7,19 @@ spring:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+# http:# 本地开发
+#      username: root
+#      password: "088.5741"
+      # 线上
       username: root
-      password: "088.5741"
+      password: root
   redis:
-    host: localhost
-    port: 6379
-    #虚拟机redis 模拟远程连接Redis
-#    host: 192.168.2.6
+#    host: localhost
 #    port: 6379
-#    password: 123456
+    #虚拟机redis 模拟远程连接Redis
+    host: 192.168.2.8
+    port: 6379
+    password: 123456
     # 默认0号数据库
     database: 0
     jedis:
@@ -42,4 +46,6 @@ mybatis-plus:
 
 reggie:
   #上传图片保存路径
-  imagePath: D:\\image\
+#  imagePath: D:\\image\
+  # 线上
+  imagePath: \usr\local\image\
