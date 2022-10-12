@@ -75,8 +75,6 @@ public class CommonController {
         try {
             //输入流，通过输入流读取文件内容
             fileInputStream = new FileInputStream(new File(imagePath + name));
-            log.info("imagePath:{}",imagePath+name);
-
             //输出流，通过输出流将文件写回浏览器
             outputStream = response.getOutputStream();
 
