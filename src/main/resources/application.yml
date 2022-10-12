@@ -59,12 +59,12 @@ spring:
     allow-bean-definition-overriding: true
   redis:
     # 本地开发
-    host: localhost
-    port: 6379
-    #正式Redis
-#    host: 192.168.2.8
+#    host: localhost
 #    port: 6379
-#    password: 123456
+    #正式Redis
+    host: 192.168.2.8
+    port: 6379
+    password: 123456
     # 默认0号数据库
     database: 0
     jedis:
