@@ -3,19 +3,6 @@ server:
 spring:
   application:
     name: reggie_take_out
-#  datasource:
-#    druid:
-#      driver-class-name: com.mysql.cj.jdbc.Driver
-#      # 本地开发
-##      url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-##      username: root
-##      password: "088.5741"
-#      # 正式 备数据库
-##      url: jdbc:mysql://192.168.2.9:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-#      # 正式 主数据库
-#      url: jdbc:mysql://192.168.2.8:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-#      username: root
-#      password: root
   shardingsphere:
     datasource:
       #可自定义
