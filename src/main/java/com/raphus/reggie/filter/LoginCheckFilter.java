@@ -38,7 +38,12 @@ public class LoginCheckFilter implements Filter{
                 "/user/login",
                 "/common/**",
                 "/backend/**",
-                "/front/**"
+                "/front/**",
+                //Swagger
+                "/doc.html",
+                "/webjars/**",
+                "/swagger-resources",
+                "/v2/api-docs"
         };
 
         //2、判断本次请求是否需要处理(判断本次请求路径是否在urls数组中)
